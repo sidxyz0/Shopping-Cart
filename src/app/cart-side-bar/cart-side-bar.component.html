@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div><h3>Cart</h3></div>
+    <div *ngFor="let j of cart">
+        <div class="d-flex justify-content-between my-2">
+            <div style="width: 45%;">
+                <img [src]="j.src" style="object-fit: fill; height: 25vw; width: 100%;">
+            </div>
+            <div>
+                <p>{{j.itemName}}</p>
+                <p>{{j.itemPrice}}$</p>
+            </div>
+            <div>
+                <p>X{{j.amount}}</p>
+            </div>
+            <div>
+                <button class="btn btn-secondary">REMOVE</button>
+            </div>
+        </div>
+    </div>
+</div>
